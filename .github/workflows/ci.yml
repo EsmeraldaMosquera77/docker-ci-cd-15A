@@ -26,4 +26,4 @@ jobs:
 
 
           - name: Construir imagen Docker
-            run: docker build -t backend-spring .
+            run: docker build -t backend-springboot .
