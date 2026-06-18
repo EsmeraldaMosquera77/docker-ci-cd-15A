@@ -22,7 +22,7 @@ jobs:
               java-version: 21
 
           - name: Compilar proyecto
-            uses: mvn clean package -DskipTests
+            run: mvn clean package -DskipTests
 
 
           - name: Construir imagen Docker
