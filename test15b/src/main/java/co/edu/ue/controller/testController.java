@@ -36,6 +36,14 @@ public class testController {
 
         return numero1 + numero2 + numero3;
     }
+
+	@GetMapping(value="/restar")
+	public int restar(
+			@RequestParam int num1,
+			@RequestParam int num2) {
+
+		return num1 - num2;
+	}
 	
 	@GetMapping(value="/lista")
 	public List<Prueba> getTesting(){
